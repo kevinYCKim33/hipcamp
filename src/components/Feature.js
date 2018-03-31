@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Feature = (props) => {
-  // debugger;
+const Feature = ({feature}) => {
+
   return (
-    <li>
-      Title: {props.feature.title}<br />
-      Presence: {props.feature.presence ? "exists" : "dne"}
+    <li className={ feature.presence ? null : "unavailable" }>
+      {feature.title}
     </li>
   )
 }
