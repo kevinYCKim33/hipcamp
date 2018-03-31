@@ -4,20 +4,18 @@ import { FEATURES } from '../library/camp_features';
 import FeaturesList from '../components/FeaturesList';
 
 class App extends Component {
-  constructor(){
+
+  constructor() {
     super();
     this.state = {
       features: FEATURES,
-    };
-  }
-
-  componentDidMount() {
-    console.log("the app just mounted!");
+    }
   }
 
   render() {
     return (
       <div className="App">
+        Features: 
         <FeaturesList features = {this.state.features} />
       </div>
     );

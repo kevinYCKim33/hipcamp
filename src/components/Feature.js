@@ -47,5 +47,4 @@ class Feature extends React.Component {
     )
   }
 }
-
 export default Feature;
