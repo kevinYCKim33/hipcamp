@@ -1,4 +1,5 @@
 import React from 'react';
+import FeaturesList from './FeaturesList';
 
 class Feature extends React.Component {
   constructor() {
@@ -38,6 +39,9 @@ class Feature extends React.Component {
               No subfeatures to display
             </li>
           </ul>
+        }
+        {this.state.currentSubfeatures !== null &&
+          <FeaturesList features = {this.state.currentSubfeatures}/>
         }
       </li>
     )
