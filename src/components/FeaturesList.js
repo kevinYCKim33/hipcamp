@@ -3,13 +3,13 @@ import Feature from './Feature';
 
 const FeaturesList = ({features}) => {
   return (
-    <div>
+    <ul>
       {features.map((feature, index) => {
         return (
           <Feature key={index} feature={feature}/>
         )
       })}
-    </div>
+    </ul>
   );
 }
 
