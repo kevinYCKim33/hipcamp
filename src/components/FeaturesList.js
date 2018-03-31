@@ -1,15 +1,14 @@
 import React from 'react';
 import Feature from './Feature';
 
-const FeaturesList = (props) => {
-  const features = props.features.map((feature, index) => {
-    return (
-      <Feature key={index} feature={feature} />
-    )
-  })
+const FeaturesList = ({features}) => {
   return (
     <div>
-      {features}
+      {features.map((feature, index) => {
+        return (
+          <Feature key={index} feature={feature}/>
+        )
+      })}
     </div>
   );
 }
