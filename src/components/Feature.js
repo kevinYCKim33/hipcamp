@@ -1,12 +1,21 @@
 import React from 'react';
 
-const Feature = ({feature}) => {
+class Feature extends React.Component {
+  constructor() {
+    super();
+  }
 
-  return (
-    <li className={ feature.presence ? null : "unavailable" }>
-      {feature.title}
-    </li>
-  )
+  handleOnClick = () => {
+    debugger;
+  }
+
+  render() {
+    return (
+      <li onClick={this.handleOnClick} className={ this.props.feature.presence ? null : "unavailable" }>
+        {this.props.feature.title}
+      </li>
+    )
+  }
 }
 
 export default Feature;
