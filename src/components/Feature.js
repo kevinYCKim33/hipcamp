@@ -7,52 +7,38 @@ class Feature extends React.Component {
     super();
     this.handleOnClick = this.handleOnClick.bind(this);
     this.state = {
-      subfeatures: null,
-      message: "",
+      displaySubfeatures: false,
     }
   }
 
   handleOnClick = () => {
-    const {subfeatures} = this.props.feature;
-    if (subfeatures.length > 0) {
-      this.setState({
-        subfeatures
-      });
-    } else {
-      this.setState({
-        message: "No subfeatures exist",
-      });
-    }
+    this.setState({
+      displaySubfeatures: true,
+    });
   }
 
   render() {
-    const {feature} = this.props;
-    const {subfeatures, message} = this.state;
-
-    let dne = null;
-    if (message !== "") {
-      dne = (
-        <NoSubFeature/>
-      )
-    }
-    let thing = null;
-    if (subfeatures !== null) {
-      thing = (
-        <FeaturesList features={subfeatures}/>
-      )
+    let subfeaturesDisplay = null;
+    const {subfeatures, presence, title} = this.props.feature;
+    if (this.state.displaySubfeatures) {
+      if (subfeatures.length > 0) {
+        subfeaturesDisplay = (
+          <FeaturesList features={subfeatures}/>
+        );
+      } else {
+        subfeaturesDisplay = (
+          <NoSubFeature/>
+        );
+      }
     }
     return (
-      <li
-        onClick={this.handleOnClick}
-        className={ feature.presence ? null : "unavailable" }
-      >
+      <li onClick={this.handleOnClick} className={presence ? null : "unavailable"}>
         <div>
-          {feature.title}
+          {title}
         </div>
-        {dne}
-        {thing}
+        {subfeaturesDisplay}
       </li>
-    )
+    );
   }
 }
 export default Feature;
