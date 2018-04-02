@@ -31,7 +31,7 @@ class Feature extends React.Component {
       }
     }
     return (
-      <li onClick={this.handleFeatureClick} className={presence ? "available" : "unavailable"}>
+      <li onClick={this.handleFeatureClick} className={presence ? "available" : "unavailable"} >
         <div>
           {title}
         </div>
