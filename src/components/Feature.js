@@ -5,21 +5,20 @@ import NoSubFeature from './NoSubFeature';
 class Feature extends React.Component {
   constructor() {
     super();
-    this.handleOnClick = this.handleOnClick.bind(this);
     this.state = {
       displaySubfeatures: false,
     }
   }
 
-  handleOnClick = () => {
+  handleFeatureClick = () => {
     this.setState({
       displaySubfeatures: true,
     });
   }
 
   render() {
-    let subfeaturesDisplay = null;
     const {subfeatures, presence, title} = this.props.feature;
+    let subfeaturesDisplay = null;
     if (this.state.displaySubfeatures) {
       if (subfeatures.length > 0) {
         subfeaturesDisplay = (
@@ -32,7 +31,7 @@ class Feature extends React.Component {
       }
     }
     return (
-      <li onClick={this.handleOnClick} className={presence ? null : "unavailable"}>
+      <li onClick={this.handleFeatureClick} className={presence ? "available" : "unavailable"}>
         <div>
           {title}
         </div>

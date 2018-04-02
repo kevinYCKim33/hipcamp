@@ -15,7 +15,13 @@
 /* when a feature is unavailable
 i.e. showers are not provided */
 .unavailable {
-  text-decoration: line-through;
-  color: gray;
-  opacity: 0.3;
+  color: red;
+}
+
+.available {
+  color: green;
+}
+
+.no-addl-info {
+  color: black;
 }
