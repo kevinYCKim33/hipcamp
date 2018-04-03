@@ -5,11 +5,15 @@
   border-bottom: 0.0625rem solid rgb(230,230,230);
 }
 
-#footer{
- /* background-color: rgba(230,230,230, 0.5); */
- border-top: 0.0625rem solid rgb(230,230,230);
+.hipcamp-logo {
+  padding-left: 1.25rem;
+  width: 12.25rem;
+}
+
+.App-footer {
  display: flex;
- height: 4.875rem;
+ height: 3.875rem;
+ border-top: 0.0625rem solid rgb(230,230,230);
  position:fixed;
  bottom:0;
  left:0;
@@ -18,20 +22,14 @@
  justify-content: center;
 }
 
-.hipcamp-logo {
-  padding-left: 1.25rem;
-  width: 12.25rem;
-}
-
 .github-logo {
-  width: 4rem;
+  width: 3rem;
 }
 
 .App-body {
-  padding-top: 50px;
-  padding-left: 100px;
+  padding-top: 1rem;
+  padding-left: 3rem;
 }
-
 
 .features {
   list-style-type: none;
@@ -42,21 +40,16 @@
   cursor: pointer;
 }
 
+.available {
+  color: black;
+}
 
-/* when a feature is unavailable
-i.e. showers are not provided */
 .unavailable {
   color: rgba(136,136,136, .3);
 }
 
-.available {
-  color: green;
-}
-
 .no-addl-info {
-  color: black;
-}
-
-.has-subfeatures {
-  text-decoration: underline;
+  font-style: italic;
+  color: rgba(136,136,136, .3);
+  list-style: none;
 }

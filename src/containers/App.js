@@ -25,7 +25,7 @@ class App extends Component {
           Features:
           <FeaturesList features = {this.state.features} />
         </div>
-        <footer id="footer">
+        <footer className="App-footer">
           <div><img className="github-logo" src={githubLogo}/></div>
         </footer>
       </div>

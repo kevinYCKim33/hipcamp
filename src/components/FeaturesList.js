@@ -6,7 +6,7 @@ const FeaturesList = ({features}) => {
     <ul className="features">
       {features.map((feature, index) => {
         return (
-          <Feature key={index} feature={feature}/>
+          <Feature key={index} feature={feature} />
         );
       })}
     </ul>

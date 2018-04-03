@@ -27,7 +27,7 @@ class Feature extends React.Component {
       } else {
         subfeaturesDisplay = (
           <NoSubFeature/>
-        );
+        )
       }
     }
     return (
