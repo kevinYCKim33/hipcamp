@@ -10,7 +10,7 @@ class Feature extends React.Component {
     }
   }
 
-  handleFeatureClick = () => {
+  displaySubfeatures = () => {
     this.setState({
       displaySubfeatures: true,
     });
@@ -31,7 +31,7 @@ class Feature extends React.Component {
       }
     }
     return (
-      <li onClick={this.handleFeatureClick} className={presence ? "available" : "unavailable"} >
+      <li onClick={this.displaySubfeatures} className={presence ? "available" : "unavailable"} >
         <div>
           {title}
         </div>
@@ -40,4 +40,5 @@ class Feature extends React.Component {
     );
   }
 }
+
 export default Feature;
