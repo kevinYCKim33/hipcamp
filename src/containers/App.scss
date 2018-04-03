@@ -37,12 +37,13 @@ $standard-border: 0.0625rem solid $light-gray;
 .App-body {
   padding-top: 1rem;
   padding-left: 3rem;
+  font-size: 0.9375rem;
 }
 
 .features {
   list-style-type: none;
   li {
-    padding: .3125rem;
+    padding: .1rem;
     cursor: pointer;
   }
 }

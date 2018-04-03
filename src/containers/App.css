@@ -24,12 +24,13 @@
 
 .App-body {
   padding-top: 1rem;
-  padding-left: 3rem; }
+  padding-left: 3rem;
+  font-size: 0.9375rem; }
 
 .features {
   list-style-type: none; }
   .features li {
-    padding: .3125rem;
+    padding: .1rem;
     cursor: pointer; }
 
 .available {
