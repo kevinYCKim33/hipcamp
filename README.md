@@ -2,7 +2,8 @@
 
 A small React app styled with Sass that displays--on click--available and unavailable features at a hypothetical campground.
 
-Most of the code that you would be interested in will be found inside the `src/components` and `src/containers`.
+Most of the code that you would be interested in will be found inside the `src/components` and `src/containers` and `src/library/camp_features.js`. 
+
 
 ## Demo
 
