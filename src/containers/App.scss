@@ -1,10 +1,17 @@
+$light-gray: rgb(230,230,230);
+$translucent-gray: rgba(136,136,136, .3);
 
+$standard-border: 0.0625rem solid $light-gray;
 
-.App-header {
-  height: 4.875rem;
+%center-logo {
   display: flex;
   align-items: center;
-  border-bottom: 0.0625rem solid rgb(230,230,230);
+}
+
+.App-header {
+  @extend %center-logo;
+  height: 4.875rem;
+  border-bottom: $standard-border;
 }
 
 .hipcamp-logo {
@@ -13,15 +20,14 @@
 }
 
 .App-footer {
- display: flex;
+ @extend %center-logo;
+ justify-content: center;
  height: 3.875rem;
- border-top: 0.0625rem solid rgb(230,230,230);
+ border-top: $standard-border;
  position:fixed;
  bottom:0;
  left:0;
  width: 100%;
- align-items: center;
- justify-content: center;
 }
 
 .github-logo {
@@ -35,11 +41,10 @@
 
 .features {
   list-style-type: none;
-}
-
-.features > li {
-  padding: .3125rem;
-  cursor: pointer;
+  li {
+    padding: .3125rem;
+    cursor: pointer;
+  }
 }
 
 .available {
@@ -47,11 +52,11 @@
 }
 
 .unavailable {
-  color: rgba(136,136,136, .3);
+  color: $translucent-gray;
 }
 
 .no-addl-info {
   font-style: italic;
-  color: rgba(136,136,136, .3);
+  color: $translucent-gray;
   list-style: none;
 }

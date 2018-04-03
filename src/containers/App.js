@@ -19,14 +19,14 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <div><img className="hipcamp-logo" src={hipcampLogo}/></div>
+          <div><a href="https://www.hipcamp.com/"><img className="hipcamp-logo" src={hipcampLogo}/></a></div>
         </header>
         <div className="App-body">
           Features:
           <FeaturesList features = {this.state.features} />
         </div>
         <footer className="App-footer">
-          <div><img className="github-logo" src={githubLogo}/></div>
+          <div><a href="https://github.com/kevinYCKim33/hipcamp"><img className="github-logo" src={githubLogo}/></a></div>
         </footer>
       </div>
     );

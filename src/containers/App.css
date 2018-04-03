@@ -1,7 +1,9 @@
+.App-header, .App-footer {
+  display: flex;
+  align-items: center; }
+
 .App-header {
   height: 4.875rem;
-  display: flex;
-  align-items: center;
   border-bottom: 0.0625rem solid #e6e6e6; }
 
 .hipcamp-logo {
@@ -9,15 +11,13 @@
   width: 12.25rem; }
 
 .App-footer {
-  display: flex;
+  justify-content: center;
   height: 3.875rem;
   border-top: 0.0625rem solid #e6e6e6;
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
-  align-items: center;
-  justify-content: center; }
+  width: 100%; }
 
 .github-logo {
   width: 3rem; }
@@ -28,10 +28,9 @@
 
 .features {
   list-style-type: none; }
-
-.features > li {
-  padding: .3125rem;
-  cursor: pointer; }
+  .features li {
+    padding: .3125rem;
+    cursor: pointer; }
 
 .available {
   color: black; }
