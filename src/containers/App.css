@@ -2,54 +2,44 @@
   height: 4.875rem;
   display: flex;
   align-items: center;
-  border-bottom: 0.0625rem solid rgb(230,230,230);
-}
+  border-bottom: 0.0625rem solid #e6e6e6; }
 
 .hipcamp-logo {
   padding-left: 1.25rem;
-  width: 12.25rem;
-}
+  width: 12.25rem; }
 
 .App-footer {
- display: flex;
- height: 3.875rem;
- border-top: 0.0625rem solid rgb(230,230,230);
- position:fixed;
- bottom:0;
- left:0;
- width: 100%;
- align-items: center;
- justify-content: center;
-}
+  display: flex;
+  height: 3.875rem;
+  border-top: 0.0625rem solid #e6e6e6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
 
 .github-logo {
-  width: 3rem;
-}
+  width: 3rem; }
 
 .App-body {
   padding-top: 1rem;
-  padding-left: 3rem;
-}
+  padding-left: 3rem; }
 
 .features {
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 .features > li {
   padding: .3125rem;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .available {
-  color: black;
-}
+  color: black; }
 
 .unavailable {
-  color: rgba(136,136,136, .3);
-}
+  color: rgba(136, 136, 136, 0.3); }
 
 .no-addl-info {
   font-style: italic;
-  color: rgba(136,136,136, .3);
-  list-style: none;
-}
+  color: rgba(136, 136, 136, 0.3);
+  list-style: none; }
